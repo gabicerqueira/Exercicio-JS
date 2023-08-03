@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume - Cálculo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+    <header id="header">
+        <div class="cabecalho">
+            <div class="imagem">
+                <img src="img/logo.png" alt="logo" class="logo"></div>
+                <h1>Cálculo do Volume</h1>
+            
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="container">
+            <div class="caixas" onclick="cilindro()">
+                <img src="img/cilindro.png" alt="cilindro">
+                <p class="nome">Cilindro</p>
+                <div class="resultado">
+                    <p id="texto1"></p>
+                </div>
+            </div>
+
+            <div class="caixas" onclick="prismaT()">
+                <img src="img/Prisma.png" alt="prisma triangular" class="prismaT">
+                <p class="nome prisma">Prisma Triangular</p>
+                <p id="texto2"></p>
+            </div>
+
+            <div class="caixas" onclick="piramide()">
+                <img src="img/piramide.png" alt="pirâmide" class="prismaT">
+                <p class="nome prisma">Pirâmide</p>
+                <p id="texto3"></p>
+            </div>
+
+            <div class="caixas" onclick="cubo()">
+                <img src="img/cubo.png" alt="cubo" class="prismaT">
+                <p class="nome prisma">Cubo</p>
+                <p id="texto4"></p>
+            </div>
+
+            <div class="caixas" onclick="prismaP()">
+                <img src="img/PrismaPent.png" alt="Prisma Pentagonal" class="prismaT">
+                <p class="nome prisma">Prisma Pentagonal</p>
+                <p id="texto5"></p>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        function cilindro() {
+            let r = Number(prompt("Insira o valor do Raio (r)"));
+            let h = Number(prompt("Insira o valor do Altura (h)"));
+            let pi = Number(3.14);
+            let resultado = (pi * (r ** 2) * h);
+            document.getElementById("texto1").innerHTML = "O volume do cilindro é de " + resultado + " m³";
+
+            alert("O volume do cilindro é de " + resultado + " m³");
+        }
+
+
+        function prismaT() {
+            let b = Number(prompt("Insira o valor da Base (b)"));
+            let a = Number(prompt("Insira o valor da Altura (a)"));
+            let h = Number(prompt("Insira o valor do Comprimento (h)"));
+            let resultado = (1 / 2 * (b * a * h));
+            document.getElementById("texto2").innerHTML = "O volume do prisma triangular é de " + resultado + " m³";
+
+            alert("O volume do prisma triangular é de " + resultado + " m³");
+        }
+
+        function piramide() {
+            let l = Number(prompt("Insira o valor do Lado (l)"));
+            let h = Number(prompt("Insira o valor do Altura (h)"));
+            let resultado = (((l * l) * h) / 3);
+            document.getElementById("texto3").innerHTML = "O volume da pirâmide é de " + resultado + " m³";
+
+            alert("O volume da pirâmide é de " + resultado + " m³");
+        }
+
+        function cubo() {
+            let a = Number(prompt("Insira o valor do Lado (a)"));
+            let resultado = (a ** 3);
+            document.getElementById("texto4").innerHTML = "O volume do cubo é de " + resultado + " m³";
+
+            alert("O volume do cubo é de " + resultado + " m³");
+        }
+
+        function prismaP() {
+            let a = Number(prompt("Insira o valor do Altura (a)"));
+            let l = Number(prompt("Insira o valor do Lado (l)"));
+            let h = Number(prompt("Insira o valor do Comprimento (h)"));
+            let resultado = (5 / 2 * (a * l * h));
+            document.getElementById("texto5").innerHTML = "O volume do prisma pentagonal é de " + resultado + " m³";
+
+            alert("O volume do prisma pentagonal é de " + resultado + " m³");
+        }
+    </script>
+
+</body>
+
+</html>

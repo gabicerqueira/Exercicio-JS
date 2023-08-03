@@ -1,0 +1,100 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+#main{
+    background-image: linear-gradient(to top, rgb(255, 0, 140), rgb(145, 0, 174));
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px;
+    justify-content: space-around;
+    padding-bottom: 123px;
+    padding-top: 122px;
+}
+
+.caixas img{
+    width: 150px;
+    margin-top: 20px;
+}
+
+.caixas{
+    background-color: white;
+    width: 220px;
+    height: 330px;
+    border-radius: 12px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 20px;
+    cursor: pointer;
+}
+
+.nome{
+    color: black;
+    font: 600 20px 'Lucida', sans-serif;
+    padding-top: 10px;
+}
+
+.prisma{
+    padding-top: 15px;
+}
+
+.caixas .prismaT{
+    margin-top: 40px;
+}
+
+.caixas:hover{
+    -webkit-transform: scale(1.1);
+   transform: scale(1.2);
+}
+
+#texto1, #texto2, #texto3, #texto4, #texto5{
+    font: 700 18px 'Lucida', sans-serif;
+    color: red;
+    margin-top: 30px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.cabecalho{
+    background-color: rgb(69, 0, 81);
+    height: 80px;
+    display: flex;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font: 40px 'Open Sans', sans-serif;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+.imagem{
+    padding-left: 525px;
+    padding-top: 10px;
+}
+
+/* @media screen and (max-width: 400px ) {
+    
+} */
