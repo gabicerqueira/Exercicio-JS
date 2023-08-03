@@ -91,10 +91,28 @@ h1{
 }
 
 .imagem{
-    padding-left: 525px;
-    padding-top: 10px;
+    padding-top: 8px;
+    display: flex;
 }
 
-/* @media screen and (max-width: 400px ) {
+@media screen and (max-width: 500px ) {
+    /* .cabecalho{
+        height: 60px;
+    }
     
-} */
+    h1{
+        font: 25px 'Open Sans', sans-serif;
+        padding-top: 15px;
+        padding-left: 10px;
+    }
+    
+    .logo{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .imagem{
+        padding-left: 20%;
+        padding-top: 10px;
+    } */
+}
