@@ -42,6 +42,7 @@ img{
     flex-direction: column;
     margin: 30px 20px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .nome{
@@ -61,6 +62,7 @@ img{
 .caixas:hover{
     -webkit-transform: scale(1.1);
    transform: scale(1.2);
+   
 }
 
 #texto1, #texto2, #texto3, #texto4, #texto5{
